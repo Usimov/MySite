@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.turn {/* Не требуется*/
+	-moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+	position: fixed;
+	Z-index: 1000;
+	top: 10px;
+	left: -10px;
+	height: 25px;
+	width: 50px;
+	background-color: #BDFFEC;
+	text-align: center;
+	border: 1px double black;
+	border-radius: 15px 15px 15px 10px;
+}
+
+
+
+ 
+html {
+    height: 100%;
+}
+ 
+header, nav, section, main, article, aside, footer {
+    display: block;
+}
+ 
+body {
+    height: 100%;
+    width: 100%;
+    /*background: #EAF2F5 url(Border_1.jpg);*/
+	background-size: cover;
+}
+
+.textarea {
+	width: 15em;
+	height: 5em;
+}
+
+.maxw {
+    margin: 0 auto;
+    min-width: 240px;
+    max-width: 1920px;
+}
+
+.maxw span {
+    color: #FFFFFF;
+	margin: 0.1em 0.5em 0em 3em;
+	border: 2px double black;
+}
+
+span.right_float {
+    float: right;
+    margin: 0;	
+	border: none;
+}
+
+.comment_aside_left {
+	color: white;
+	text-align: left;
+}
+
+.sub_float_right {
+	float: right;
+	width: 5em;
+}
+
+.sub_name_cl {
+	width: 8em;
+	height: 1.15em;
+}
+
+.maxw h4{
+	padding-top: 1em;
+    text-align: center;
+}
+
+#wrapper {
+    position: relative;
+    margin: 0 auto;
+    height: auto !important;
+    height: 100%;
+    /*min-height: 100%;  -  Нужно для прижатия футера к низу*/
+    padding: 5px 0;
+}
+
+.section {
+    width: 100%;
+    padding: 0 0 25px;
+    position: relative;
+}
+
+.comment_left, .comment_right {
+    text-align: center;
+	width: 88%;
+    padding: 10px 10px 10px;
+    position: relative;
+	background-color: #E88139;
+	border: 4px double black;
+}
+
+.comment_right {
+	background-color: #E86A3B;
+}
+
+.comment_center {
+    text-align: left;
+	width: 88%;
+    padding: 10px 10px 10px;
+    position: relative;
+	/*background-color: #E86A3B;*/
+	border: 4px double black;
+}
+
+.comment_center  ul, ol {
+    margin-left: 5%;
+}
+
+.comment_center  img {
+    width: 7em;
+	/*height: 10em;*/
+	border: 2px solid white;
+	float: right;
+}
+
+.comment_center table{
+	float: right;
+	width: 12em;
+	height: 100%;
+	border: 1px solid black; 
+}
+
+.comment_center th{
+	background: black;
+	color: #FFFFFF;
+}
+.fff {text-align: center;}
+ 
+.section:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+ 
+.mainwrap {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#s_left {
+    float: left;
+    width: 240px;
+    margin-left: -100%;
+    left: 0;
+    position: relative;
+    background: #E88139;
+    min-height: 530px;
+}
+
+#s_left h2 {
+    color: #FFFFFF;
+	text-align: center;
+}
+
+#s_left ol {
+    margin-left: 5%;
+	text-align: justify;
+}
+ 
+#s_right {
+    float: left;
+    width: 240px;
+    margin-left: -240px;
+    right: 0;
+    position: relative;
+    background: #E86A3B;
+    min-height: 530px;
+}
+
+#s_right h2 {
+    color: #FFFFFF;
+	text-align: center;
+}
+
+#s_right ol {
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#down {
+	color: #000000;
+	text-align: center;
+	background-color: #AFBFC6;
+}
+
+header {
+    min-width: 240px;
+    width: 100%;
+    height: 50px;
+    background: #00BD06;
+}
+
+main {
+    padding: 0 240px 0 240px;
+    min-height: 530px;
+    margin: 0;
+}
+ 
+article {
+    padding: 0 5px;
+    margin: 0 5px;
+    background: #EAF2F5 url(Background.jpg);
+	background-size: cover;
+    min-height: 530px;
+}
+
+article  h2{
+    color: #FFFFFF;
+	text-align: center;
+}
+
+footer {
+    margin: -25px auto 0;
+    width: 100%;
+    min-width: 240px;
+    height: 50px;
+    background: #AFBFC6;
+    position: relative;
+}
+
+/* Для отображения на устройствах меньше 980px*/       
+        @media screen and (min-width:240px) and (max-width:479px) {
+             
+                main {
+                        padding:10px;
+                    }
+                     
+                     #s_left {
+                        padding: 0;
+                        margin: 0 auto;
+                        float: none;
+                        clear: both;
+                        left: 0;
+                    }
+                                
+                    #s_right {
+                        padding: 0;
+                        margin: 0 auto;
+                        float: none;
+                        clear: both;
+                        right: 0;
+                    } 
+					
+					.comment_center {
+						text-align: center;
+					} 
+					
+					.comment_center table{
+						padding: 0;
+                        margin: 0 auto;
+                        float: inherit;
+                        clear: both;
+                        right: 0;
+					}
+					.maxw span {
+						color: #FFFFFF;
+						margin: 0.2em 0.1em 0.2em 0.1em;
+						border: 2px double black;
+						}
+					.maxw h4{
+						padding-top: 0.2em;
+						text-align: center;
+					}
+        }
+         
+        @media screen and (min-width:480px) and (max-width:799px) {
+             
+                main {
+                        padding:10px;
+                    }
+                     
+                     #s_left {
+                        padding: 0;
+                        margin: 0 auto;
+                        float: none;
+                        clear: both;
+                        left: 0;
+                    }
+                                
+                    #s_right {
+                        padding: 0;
+                        margin: 0 auto;
+                        float: none;
+                        clear: both;
+                        right: 0;
+                    }
+					.maxw span {
+						color: #FFFFFF;
+						margin: 0.2em 0.1em 0.2em 0.1em;
+						border: 2px double black;
+						}
+					.maxw h4{
+						padding-top: 1em;
+						text-align: center;
+					}
+        }
+         
+        @media screen and (min-width:800px) and (max-width:979px) {
+         
+                main {
+                        padding:10px;
+                    }
+                     
+                     #s_left {
+                        padding: 0;
+                        margin: 0 auto;
+                        float: none;
+                        clear: both;
+                        left: 0;
+                    }
+                                
+                    #s_right {
+                        padding: 0;
+                        margin: 0 auto;
+                        float: none;
+                        clear: both;
+                        right: 0;
+                    }
+					
+					.maxw span {
+						color: #FFFFFF;
+						margin: 0.1em 0.5em 0em 1em;
+						border: 2px double black;
+						}
+					.maxw h4{
+						padding-top: 1em;
+						text-align: center;
+					}
+        }
