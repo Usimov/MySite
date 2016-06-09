@@ -20,7 +20,7 @@ while($row = mysql_fetch_array($res))
 $finalCounter = $j - 1;
 
 
-mysql_close($link);
+mysql_close($link); ///dfdfdf
 
 $number_comment[1] = Rand(2, $finalCounter - 1);
 $number_comment[2] = Rand(1, $number_comment[1] - 1);
