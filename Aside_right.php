@@ -1,5 +1,4 @@
 <?php
-
 $Name_database = 'u956127722_site';
 $link = mysqli_connect(
 	'localhost',
@@ -16,7 +15,7 @@ $select = "SELECT * FROM $Name_database.$table";
 $res = mysqli_query($link, $select);
 
 $j = 1;
-while($row = mysqli_fetch_array($res))
+while($row = mysqli_fetch_assoc($res))
 {
     $clientName[$j] = $row['Name'];
 	$postDate[$j] = $row['Date'];
