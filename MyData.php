@@ -1,5 +1,5 @@
 <div class="comment_center">
-<table summary="Стоимость часа моей работы"> 
+<table>
     <caption><h3>Стоимость работ</h3></caption>
     <thead>
         <tr>
