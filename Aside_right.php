@@ -1,14 +1,18 @@
 <?php
-$host='localhost'; // имя хоста (уточняется у провайдера)
-$Name_database = 'u956127722_site'; // имя базы данных, которую вы должны создать
-$user='u956127722_root'; // заданное вами имя пользователя, либо определенное провайдером
-$pswd='111111'; // заданный вами пароль
-$link = mysqli_connect($host, $user, $pswd) or die("Не могу соединиться с MySQL.");
-mysqli_select_db($Name_database, $link);
+
+$link = mysqli_connect(
+	'localhost',
+	'u956127722_root',
+	'111111',
+	'u956127722_site');
+if (!$link) {
+	printf("&#1053;&#1077;&#1074;&#1086;&#1079;&#1084;&#1086;&#1078;&#1085;&#1086; &#1087;&#1086;&#1076;&#1082;&#1083;&#1102;&#1095;&#1080;&#1090;&#1100;&#1089;&#1103; &#1082; &#1073;&#1072;&#1079;&#1077; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;. &#1050;&#1086;&#1076; &#1086;&#1096;&#1080;&#1073;&#1082;&#1080;: %s\n", mysqli_connect_error());
+	exit;
+}
 
 $table ='Clients';
 $select = "SELECT * FROM $Name_database.$table";
-$res = mysqli_query($select);
+$res = mysqli_query($link, $select);
 
 $j = 1;
 while($row = mysqli_fetch_array($res))
