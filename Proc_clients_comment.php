@@ -3,8 +3,8 @@ $host='localhost'; // имя хоста (уточняется у провайд�
 $Name_database = 'my_site'; // имя базы данных, которую вы должны создать
 $user='root'; // заданное вами имя пользователя, либо определенное провайдером
 $pswd='Usimov5031661'; // заданный вами пароль
-$link = mysql_connect($host, $user, $pswd) or die("Не могу соединиться с MySQL.");
-mysql_select_db($Name_database, $link); 
+$link = mysqli_connect($host, $user, $pswd) or die("Не могу соединиться с MySQL.");
+mysqli_select_db($Name_database, $link);
 
 $comment = $_POST['comment'];
 $name_client = $_POST['name_client'];
@@ -13,8 +13,8 @@ $date = date('Y-m-d');
 $table ='Clients';
 $insert = "INSERT INTO $Name_database.$table  (`Name`, `Date`, `Comment`) 
     VALUES ('$name_client', '$date', '$comment');";
-mysql_query($insert);
-mysql_close($link);
+mysqli_query($insert);
+mysqli_close($link);
 header("Location:Index.php");
 
 /*

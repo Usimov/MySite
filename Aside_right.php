@@ -3,15 +3,15 @@ $host='localhost'; // имя хоста (уточняется у провайд�
 $Name_database = 'my_site'; // имя базы данных, которую вы должны создать
 $user='root'; // заданное вами имя пользователя, либо определенное провайдером
 $pswd='Usimov5031661'; // заданный вами пароль
-$link = mysql_connect($host, $user, $pswd) or die("Не могу соединиться с MySQL.");
-mysql_select_db($Name_database, $link); 
+$link = mysqli_connect($host, $user, $pswd) or die("Не могу соединиться с MySQL.");
+mysqli_select_db($Name_database, $link);
 
 $table ='Clients';
 $select = "SELECT * FROM $Name_database.$table";
-$res = mysql_query($select);
+$res = mysqli_query($select);
 
 $j = 1;
-while($row = mysql_fetch_array($res))
+while($row = mysqli_fetch_array($res))
 {
     $clientName[$j] = $row['Name'];
 	$postDate[$j] = $row['Date'];
@@ -20,7 +20,7 @@ while($row = mysql_fetch_array($res))
 $finalCounter = $j - 1;
 
 
-mysql_close($link); ///dfdfdf
+mysqli_close($link); ///dfdfdf
 
 $number_comment[1] = Rand(2, $finalCounter - 1);
 $number_comment[2] = Rand(1, $number_comment[1] - 1);
