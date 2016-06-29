@@ -15,7 +15,7 @@ $comment = $_POST['comment'];
 $name_client = $_POST['name_client'];
 $date = date('Y-m-d');
 
-$table ='Clients';
+$table ='clients';
 $insert = "INSERT INTO $Name_database.$table  (`Name`, `Date`, `Comment`) 
     VALUES ('$name_client', '$date', '$comment');";
 mysqli_query($link, $insert);

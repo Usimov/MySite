@@ -10,7 +10,7 @@ if (!$link) {
 	exit;
 }
 
-$table ='Clients';
+$table ='clients';
 $select = "SELECT * FROM $Name_database.$table";
 $res = mysqli_query($link, $select);
 
