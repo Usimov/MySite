@@ -12,29 +12,29 @@
     <tbody>
 	    <tr>
 		    <td>Аудит</td>
-    		<td rowspan="2">350</td>
+    		<td rowspan="2">200</td>
      	</tr>
 	    <tr>
 		    <td>Модерация</td>
 	    </tr>
 	    <tr>
 	     	<td>Верстка</td>
-	    	<td>450</td>
+	    	<td>250</td>
 	    </tr>
 	    <tr>
 		    <td>PHP</td>
-		    <td rowspan="2">500</td>
+		    <td rowspan="2">300</td>
 	    </tr>
 	    <tr>
-		    <td>Javascript</td>
+		    <td>Front end</td>
 	    </tr>
 	    <tr>
-		    <td>Адаптив</td>
-		    <td>700</td>
+		    <td>Back end</td>
+		    <td>400</td>
 	    </tr>
 	    <tr>
-		    <td>Fron end</td>
-		    <td>800</td>
+		    <td>Полный цикл</td>
+		    <td>500</td>
 	    </tr>
     <tbody>
 </table>
