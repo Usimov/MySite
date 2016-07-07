@@ -12,8 +12,8 @@
         require "Header.php";
     ?>
     <!-- Горизонтальная ориентация -->
-    <iframe src='inwidget/index.php?width=800&inline=7&view=14&toolbar=false'
-            scrolling='no' frameborder='no' style='border:none;width:800px;height:295px;overflow:hidden;'></iframe>
+    <!-- <iframe src='inwidget/index.php?width=800&inline=7&view=14&toolbar=false' -->
+            <!-- scrolling='no' frameborder='no' style='border:none;width:800px;height:295px;overflow:hidden;'></iframe> -->
 
     <div id="wrapper">
 	    <div class="section maxw">
