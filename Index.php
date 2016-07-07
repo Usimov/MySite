@@ -20,7 +20,7 @@
 		    <div class="mainwrap">
                 <main>			
                     <article>
-                        <h2>Обо мне:</h2>
+                        <h2>Мастер на час (IT, SEO, аудит, копирайтинг)</h2>
 						<?php
 						        require "MyFoto.php";
 						?>
